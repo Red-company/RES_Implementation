@@ -7,8 +7,8 @@
  * Distributed under the MIT License (MIT) (See accompanying file LICENSE.txt
  * or copy at http://opensource.org/licenses/MIT)
  */
-#include "./ResCBC1536.h"
-#include "./_private/ResDeclarations.h"
+#include "ResCBC1536.h"
+#include "_private/ResDeclarations.h"
 
 using namespace Red::Res;
 
