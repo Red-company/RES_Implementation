@@ -5,7 +5,7 @@
 ## What is it?
 
 This is a small and portable C++ implementation of the Red Encryption Standart(RES).
-RES is upgraded version of Advanced Encryption Standart(AES) and is a part of RedLibrary(Now developing).
+RES is upgraded version of Advanced Encryption Standart(AES) and is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
 
 ## Where to use?
 
