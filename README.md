@@ -9,7 +9,7 @@ RES is upgraded version of Advanced Encryption Standart(AES) and is a part of [R
 
 ## Where to use?
 
-RES has excess level of encryption, and should be used in specific tasks, where you need absolute encryption and ready to sacrifice your perfomance. If you need perfomance, I advise you to use AES([Here's my implementation](https://github.com/vladimirrogozin/AES_Implementation)).
+RES has excess level of encryption, and should be used in specific tasks, where you need absolute encryption and ready to sacrifice your perfomance. If you need perfomance, I advise you to use AES([Aes implementation](https://github.com/vladimirrogozin/AES_Implementation)).
 
 ## What does RES consist of?
 RES includes 2 encryption modes: [ECB](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29) and [CBC](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29) with 3 key length cases for each of them:
