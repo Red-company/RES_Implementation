@@ -2,9 +2,11 @@
 
 # RES_Implementation [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) [![](https://img.shields.io/github/repo-size/Red-company/RES_Implementation)](https://github.com/Red-company/RES_Implementation) ![](https://img.shields.io/github/stars/Red-company/RES_Implementation?style=social)
 
+![plot](./Screenshots/Res-crypt_main.png)
+
 ## What is it?
 
-This is a small and portable C++17 implementation of the Red Encryption Standard(RES).
+This is a small and portable C++17 implementation of the Red Encryption Standard(RES). At this repository you also can find 'Res-crypt' terminal application which helps you to encrypt/decrypt strings.
 RES is upgraded version of Advanced Encryption Standard(AES) and is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
 
 ## Where to use?
@@ -64,6 +66,15 @@ const std::string DecryptResCBC1536(const std::string& in, const std::string_vie
   * **Convertion functions are included in each of examples.**
  * There is no built-in error checking or protection from out-of-bounds memory access errors as a result of malicious input.
 
-Do contact me if you have improvements to the code(contacts are in each of source files). 
+## Screenshots? Here they are:
 
+Here's an example of encryption in CBC1536 mode:
+
+![plot](./Screenshots/Res-crypt_cbc1536_encryption.png)
+
+And the following one is the decryption of previous message:
+
+![plot](./Screenshots/Res-crypt_cbc1536_decryption.png)
+
+##
 All material in this repository is in the public domain.
