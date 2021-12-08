@@ -1,6 +1,6 @@
 ![plot](./Res_logo.png)
 
-# RES_Implementation [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) [![](https://img.shields.io/github/repo-size/Red-company/RES_Implementation)](https://github.com/Red-company/RES_Implementation) ![](https://img.shields.io/github/stars/Red-company/RES_Implementation?style=social)
+# RES_Implementation (معيار التشفير ريد) [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) ![](https://img.shields.io/github/stars/Red-company/RES_Implementation?style=social)
 
 ![plot](./Screenshots/Res-crypt_main.png)
 
