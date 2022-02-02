@@ -112,22 +112,22 @@ int main() {
             std::cout << "[\033[91mRes\033[0m/\033[94m" + mode + "\033[0m] \033[4mEncrypted message(hex):\033[0m";
 
             if (mode == "CBC-512") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptResCBC512(msg, key, iv));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResCBC512(msg, key, iv));
 
             } else if (mode == "CBC-1024") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptResCBC1024(msg, key, iv));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResCBC1024(msg, key, iv));
 
             } else if (mode == "CBC-1536") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptResCBC1536(msg, key, iv));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResCBC1536(msg, key, iv));
 
             } else if (mode == "ECB-512") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptResECB512(msg, key));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResECB512(msg, key));
 
             } else if (mode == "ECB-1024") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptResECB1024(msg, key));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResECB1024(msg, key));
 
             } else if (mode == "ECB-1536") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptResECB1536(msg, key));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResECB1536(msg, key));
             }
 
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
@@ -146,28 +146,28 @@ int main() {
             std::cout << std::endl << std::endl;
 
             if (mode == "CBC-512") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptResCBC512(Red::GetStrArray(msg), key, iv);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptResCBC512(*Red::GetStrArray(msg), key, iv);
 
             } else if (mode == "CBC-1024") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptResCBC1024(Red::GetStrArray(msg), key, iv);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptResCBC1024(*Red::GetStrArray(msg), key, iv);
 
             } else if (mode == "CBC-1536") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptResCBC1536(Red::GetStrArray(msg), key, iv);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptResCBC1536(*Red::GetStrArray(msg), key, iv);
 
             } else if (mode == "ECB-512") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptResECB512(Red::GetStrArray(msg), key);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptResECB512(*Red::GetStrArray(msg), key);
 
             } else if (mode == "ECB-1024") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptResECB1024(Red::GetStrArray(msg), key);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptResECB1024(*Red::GetStrArray(msg), key);
 
             } else if (mode == "ECB-1536") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptResECB1536(Red::GetStrArray(msg), key);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptResECB1536(*Red::GetStrArray(msg), key);
             }
 
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
