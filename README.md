@@ -11,7 +11,7 @@ _RES_ is upgraded version of _Advanced Encryption Standard(AES)_ and is a part o
 
 ## Where to use?
 
-_RES_ has excess level of encryption, and should be used in specific tasks, where you need absolute encryption and ready to sacrifice your perfomance. If you need perfomance, we advise you to use _AES_([_Aes implementation_](https://github.com/vladimirrogozin/AES_Implementation)).
+_RES_ has excess level of encryption, and should be used in specific tasks, where you need absolute encryption and ready to sacrifice your perfomance. If you need perfomance, we advise you to use _AES_([_Aes implementation_](https://github.com/red-sayed/AES_Implementation)).
 
 ## What does RES consist of?
 _RES_ includes 2 encryption modes: [_ECB_](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29) and [_CBC_](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29) with 3 key length cases for each of them:
