@@ -2,6 +2,8 @@
 
 # 🔑 RES_Implementation (معيار التشفير ريد) [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) ![](https://img.shields.io/github/stars/Red-company/RES_Implementation?style=social)
 
+> ‼️ *Patenting in process.* Don't try to steal or you'll lose your money.
+> 
 ![plot](./Screenshots/Res-crypt_main.png)
 
 ## What is it?
