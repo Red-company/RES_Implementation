@@ -79,4 +79,6 @@ And the following one is the decryption of previous message:
 ![plot](./Screenshots/Res-crypt_cbc1536_decryption.png)
 
 ##
-All material in this repository is in the public domain.
+All material in this repository is in the public domain.<br/>
+With _**Copyright© ∞ [Vladimir Rogozin](https://github.com/red-sayed).**_
+
