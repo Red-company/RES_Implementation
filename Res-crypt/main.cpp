@@ -9,6 +9,12 @@
 #include "Res/ResECB1536.h"
 #include "Hex.h"
 
+/**
+
+There is a memory leak here, sorry I don't have time to solve.
+
+*/
+
 int main() {
     // Variables.
     std::string inp;
@@ -112,22 +118,58 @@ int main() {
             std::cout << "[\033[91mRes\033[0m/\033[94m" + mode + "\033[0m] \033[4mEncrypted message(hex):\033[0m";
 
             if (mode == "CBC-512") {
-                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResCBC512(msg, key, iv));
+                std::string *res1 = Red::EncryptResCBC512(msg, key, iv);
+                std::string *res2 = Red::GetHexArray(*res1);
+
+                std::cout << std::endl << std::endl << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "CBC-1024") {
-                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResCBC1024(msg, key, iv));
+                std::string *res1 = Red::EncryptResCBC1024(msg, key, iv);
+                std::string *res2 = Red::GetHexArray(*res1);
+
+                std::cout << std::endl << std::endl << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "CBC-1536") {
-                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResCBC1536(msg, key, iv));
+                std::string *res1 = Red::EncryptResCBC1536(msg, key, iv);
+                std::string *res2 = Red::GetHexArray(*res1);
+
+                std::cout << std::endl << std::endl << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "ECB-512") {
-                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResECB512(msg, key));
+                std::string *res1 = Red::EncryptResECB512(msg, key);
+                std::string *res2 = Red::GetHexArray(*res1);
+
+                std::cout << std::endl << std::endl << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "ECB-1024") {
-                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResECB1024(msg, key));
+                std::string *res1 = Red::EncryptResECB1024(msg, key);
+                std::string *res2 = Red::GetHexArray(*res1);
+
+                std::cout << std::endl << std::endl << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "ECB-1536") {
-                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptResECB1536(msg, key));
+                std::string *res1 = Red::EncryptResECB1536(msg, key);
+                std::string *res2 = Red::GetHexArray(*res1);
+
+                std::cout << std::endl << std::endl << *res2;
+
+                delete res1;
+                delete res2;
             }
 
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
@@ -146,28 +188,58 @@ int main() {
             std::cout << std::endl << std::endl;
 
             if (mode == "CBC-512") {
-                std::string a = *Red::GetStrArray(msg.c_str());
-                std::cout << *Red::DecryptResCBC512(*Red::GetStrArray(msg), key, iv);
+                std::string *res1 = Red::GetStrArray(msg.c_str());
+                std::string *res2 = Red::DecryptResCBC512(*res1, key, iv);
+
+                std::cout << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "CBC-1024") {
-                std::string a = *Red::GetStrArray(msg.c_str());
-                std::cout << *Red::DecryptResCBC1024(*Red::GetStrArray(msg), key, iv);
+                std::string *res1 = Red::GetStrArray(msg.c_str());
+                std::string *res2 = Red::DecryptResCBC1024(*res1, key, iv);
+
+                std::cout << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "CBC-1536") {
-                std::string a = *Red::GetStrArray(msg.c_str());
-                std::cout << *Red::DecryptResCBC1536(*Red::GetStrArray(msg), key, iv);
+                std::string *res1 = Red::GetStrArray(msg.c_str());
+                std::string *res2 = Red::DecryptResCBC1536(*res1, key, iv);
+
+                std::cout << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "ECB-512") {
-                std::string a = *Red::GetStrArray(msg.c_str());
-                std::cout << *Red::DecryptResECB512(*Red::GetStrArray(msg), key);
+                std::string *res1 = Red::GetStrArray(msg.c_str());
+                std::string *res2 = Red::DecryptResECB512(*res1, key);
+
+                std::cout << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "ECB-1024") {
-                std::string a = *Red::GetStrArray(msg.c_str());
-                std::cout << *Red::DecryptResECB1024(*Red::GetStrArray(msg), key);
+                std::string *res1 = Red::GetStrArray(msg.c_str());
+                std::string *res2 = Red::DecryptResECB1024(*res1, key);
+
+                std::cout << *res2;
+
+                delete res1;
+                delete res2;
 
             } else if (mode == "ECB-1536") {
-                std::string a = *Red::GetStrArray(msg.c_str());
-                std::cout << *Red::DecryptResECB1536(*Red::GetStrArray(msg), key);
+                std::string *res1 = Red::GetStrArray(msg.c_str());
+                std::string *res2 = Red::DecryptResECB1536(*res1, key);
+
+                std::cout << *res2;
+
+                delete res1;
+                delete res2;
             }
 
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
