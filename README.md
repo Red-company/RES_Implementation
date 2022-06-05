@@ -34,28 +34,28 @@ There are 7 header files(6 with algorithms and 1 with shared definitions) and 6 
 
 ```C
 // ResECB512.h
-const std::string EncryptResECB512(const std::string& in, const std::string_view key);
-const std::string DecryptResECB512(const std::string& in, const std::string_view key);
+std::string * EncryptResECB512(const std::string& in, const std::string_view key);
+std::string * DecryptResECB512(const std::string& in, const std::string_view key);
 
 // ResECB1024.h
-const std::string EncryptResECB1024(const std::string& in, const std::string_view key);
-const std::string DecryptResECB1024(const std::string& in, const std::string_view key);
+std::string * EncryptResECB1024(const std::string& in, const std::string_view key);
+std::string * DecryptResECB1024(const std::string& in, const std::string_view key);
 
 // ResECB1536.h
-const std::string EncryptResECB1536(const std::string& in, const std::string_view key);
-const std::string DecryptResECB1536(const std::string& in, const std::string_view key);
+std::string * EncryptResECB1536(const std::string& in, const std::string_view key);
+std::string * DecryptResECB1536(const std::string& in, const std::string_view key);
 
 // ResCBC512.h
-const std::string EncryptResCBC512(const std::string& in, const std::string_view key, const std::string_view iv);
-const std::string DecryptResCBC512(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * EncryptResCBC512(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * DecryptResCBC512(const std::string& in, const std::string_view key, const std::string_view iv);
 
 // ResCBC1024.h
-const std::string EncryptResCBC1024(const std::string& in, const std::string_view key, const std::string_view iv);
-const std::string DecryptResCBC1024(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * EncryptResCBC1024(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * DecryptResCBC1024(const std::string& in, const std::string_view key, const std::string_view iv);
 
 // ResCBC1536.h
-const std::string EncryptResCBC1536(const std::string& in, const std::string_view key, const std::string_view iv);
-const std::string DecryptResCBC1536(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * EncryptResCBC1536(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * DecryptResCBC1536(const std::string& in, const std::string_view key, const std::string_view iv);
 ```
 
 **Tech notes:**
